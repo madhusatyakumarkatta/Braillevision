@@ -1,6 +1,6 @@
 # BrailleVision
 
-BrailleVision is a Java-based desktop application designed to capture, process, and translate Braille text into readable text and speech. The application utilizes computer vision to identify Braille dots from images or a live camera feed, translates the patterns into text, and provides an audio output.
+**BrailleVision** is an intelligent assistive technology pipeline that leverages hardware-accelerated computer vision and topological pattern recognition to decode tactile Braille matrixes in real-time. Driven by OpenCV and a modular JavaFX architecture, it seamlessly orchestrates live stream ingestion, spatial feature extraction, algorithmic translation, and synthesized auditory feedback to bridge the tactile-to-digital divide.
 
 ## Features
 - **Camera Integration**: Capture images of Braille text in real-time.
@@ -46,6 +46,15 @@ To run this project locally, ensure you have the following installed:
    ```bash
    mvn javafx:run
    ```
+
+## Troubleshooting / Known Issues
+
+### OpenCV and JavaFX Warnings
+When running the application using `mvn javafx:run`, you may encounter the following output in your console. This is expected and can be safely ignored:
+
+![Console Output](screenshot.png)
+
+The JavaFX warnings are related to the module system restrictions in newer Java versions. The OpenCV warning indicates that the library is correctly handling compatibility by falling back to a local load method, allowing the application to function normally.
 
 ## License
 [Add your license here]
