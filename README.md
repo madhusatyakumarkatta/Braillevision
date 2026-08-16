@@ -56,5 +56,4 @@ When running the application using `mvn javafx:run`, you may encounter the follo
 
 The JavaFX warnings are related to the module system restrictions in newer Java versions. The OpenCV warning indicates that the library is correctly handling compatibility by falling back to a local load method, allowing the application to function normally.
 
-## License
-[Add your license here]
+
